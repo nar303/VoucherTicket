@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBB11B57268FB2691F0756C7 /* Pods_VoucherTicket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5284DE962A62C439711757 /* Pods_VoucherTicket.framework */; };
 		D23290AE28B17AD50020AF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23290AD28B17AD50020AF03 /* AppDelegate.swift */; };
 		D23290B028B17AD50020AF03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23290AF28B17AD50020AF03 /* SceneDelegate.swift */; };
-		D23290B228B17AD50020AF03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23290B128B17AD50020AF03 /* ViewController.swift */; };
+		D23290B228B17AD50020AF03 /* VoucherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23290B128B17AD50020AF03 /* VoucherController.swift */; };
 		D23290B528B17AD50020AF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23290B328B17AD50020AF03 /* Main.storyboard */; };
 		D23290B728B17AD90020AF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23290B628B17AD90020AF03 /* Assets.xcassets */; };
 		D23290BA28B17AD90020AF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23290B828B17AD90020AF03 /* LaunchScreen.storyboard */; };
+		D23290C228B17E550020AF03 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23290C128B17E550020AF03 /* Utils.swift */; };
+		D23290C628B18F1E0020AF03 /* VoucherCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23290C528B18F1E0020AF03 /* VoucherCellTableViewCell.swift */; };
+		D23290C928B192C80020AF03 /* Voucher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23290C828B192C80020AF03 /* Voucher.swift */; };
+		D23290CB28B194F90020AF03 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23290CA28B194F90020AF03 /* Account.swift */; };
+		D23290CD28B2B20B0020AF03 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23290CC28B2B20B0020AF03 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3701272E55F271A6EE28B2E1 /* Pods-VoucherTicket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoucherTicket.release.xcconfig"; path = "Target Support Files/Pods-VoucherTicket/Pods-VoucherTicket.release.xcconfig"; sourceTree = "<group>"; };
+		4F5284DE962A62C439711757 /* Pods_VoucherTicket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoucherTicket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BA14A2F7236055A73DBF0F5 /* Pods-VoucherTicket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoucherTicket.debug.xcconfig"; path = "Target Support Files/Pods-VoucherTicket/Pods-VoucherTicket.debug.xcconfig"; sourceTree = "<group>"; };
 		D23290AA28B17AD50020AF03 /* VoucherTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoucherTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23290AD28B17AD50020AF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23290AF28B17AD50020AF03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D23290B128B17AD50020AF03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D23290B128B17AD50020AF03 /* VoucherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherController.swift; sourceTree = "<group>"; };
 		D23290B428B17AD50020AF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D23290B628B17AD90020AF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D23290B928B17AD90020AF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D23290BB28B17AD90020AF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23290C128B17E550020AF03 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D23290C528B18F1E0020AF03 /* VoucherCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherCellTableViewCell.swift; sourceTree = "<group>"; };
+		D23290C828B192C80020AF03 /* Voucher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voucher.swift; sourceTree = "<group>"; };
+		D23290CA28B194F90020AF03 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		D23290CC28B2B20B0020AF03 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB11B57268FB2691F0756C7 /* Pods_VoucherTicket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		039B65101C8A886B84CD1DA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BA14A2F7236055A73DBF0F5 /* Pods-VoucherTicket.debug.xcconfig */,
+				3701272E55F271A6EE28B2E1 /* Pods-VoucherTicket.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		61E23B696D29211760689384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F5284DE962A62C439711757 /* Pods_VoucherTicket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D23290A128B17AD50020AF03 = {
 			isa = PBXGroup;
 			children = (
 				D23290AC28B17AD50020AF03 /* VoucherTicket */,
 				D23290AB28B17AD50020AF03 /* Products */,
+				039B65101C8A886B84CD1DA3 /* Pods */,
+				61E23B696D29211760689384 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +93,42 @@
 			children = (
 				D23290AD28B17AD50020AF03 /* AppDelegate.swift */,
 				D23290AF28B17AD50020AF03 /* SceneDelegate.swift */,
-				D23290B128B17AD50020AF03 /* ViewController.swift */,
-				D23290B328B17AD50020AF03 /* Main.storyboard */,
+				D23290C328B17EC00020AF03 /* View */,
+				D23290C728B192A60020AF03 /* Model */,
+				D23290C128B17E550020AF03 /* Utils.swift */,
 				D23290B628B17AD90020AF03 /* Assets.xcassets */,
-				D23290B828B17AD90020AF03 /* LaunchScreen.storyboard */,
 				D23290BB28B17AD90020AF03 /* Info.plist */,
 			);
 			path = VoucherTicket;
+			sourceTree = "<group>";
+		};
+		D23290C328B17EC00020AF03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D23290B128B17AD50020AF03 /* VoucherController.swift */,
+				D23290C528B18F1E0020AF03 /* VoucherCellTableViewCell.swift */,
+				D23290C428B17EE40020AF03 /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D23290C428B17EE40020AF03 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D23290B328B17AD50020AF03 /* Main.storyboard */,
+				D23290B828B17AD90020AF03 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D23290C728B192A60020AF03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D23290C828B192C80020AF03 /* Voucher.swift */,
+				D23290CA28B194F90020AF03 /* Account.swift */,
+				D23290CC28B2B20B0020AF03 /* Constants.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D23290BE28B17AD90020AF03 /* Build configuration list for PBXNativeTarget "VoucherTicket" */;
 			buildPhases = (
+				0D86188718CA9F501466EBB0 /* [CP] Check Pods Manifest.lock */,
 				D23290A628B17AD50020AF03 /* Sources */,
 				D23290A728B17AD50020AF03 /* Frameworks */,
 				D23290A828B17AD50020AF03 /* Resources */,
+				35A2AF4780D68F96E1AC46B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +199,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D86188718CA9F501466EBB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoucherTicket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35A2AF4780D68F96E1AC46B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoucherTicket/Pods-VoucherTicket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoucherTicket/Pods-VoucherTicket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoucherTicket/Pods-VoucherTicket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D23290A628B17AD50020AF03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D23290B228B17AD50020AF03 /* ViewController.swift in Sources */,
+				D23290C928B192C80020AF03 /* Voucher.swift in Sources */,
+				D23290B228B17AD50020AF03 /* VoucherController.swift in Sources */,
 				D23290AE28B17AD50020AF03 /* AppDelegate.swift in Sources */,
 				D23290B028B17AD50020AF03 /* SceneDelegate.swift in Sources */,
+				D23290C228B17E550020AF03 /* Utils.swift in Sources */,
+				D23290C628B18F1E0020AF03 /* VoucherCellTableViewCell.swift in Sources */,
+				D23290CB28B194F90020AF03 /* Account.swift in Sources */,
+				D23290CD28B2B20B0020AF03 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +395,7 @@
 		};
 		D23290BF28B17AD90020AF03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BA14A2F7236055A73DBF0F5 /* Pods-VoucherTicket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,8 +407,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +426,7 @@
 		};
 		D23290C028B17AD90020AF03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3701272E55F271A6EE28B2E1 /* Pods-VoucherTicket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,8 +438,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voucher Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="VoucherController" customModule="VoucherTicket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZRC-TB-3L4">
+                                <rect key="frame" x="0.0" y="74" width="414" height="862"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="avo-gH-QyN">
+                                        <rect key="frame" x="0.0" y="20" width="414" height="473.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VoucherCellTableViewCell" rowHeight="112" id="WS4-8K-8bH" customClass="VoucherCellTableViewCell" customModule="VoucherTicket" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.5" width="414" height="112"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WS4-8K-8bH" id="MFE-V1-pYJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of the voucher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1x-tG-RXC">
+                                                            <rect key="frame" x="30" y="16" width="184" height="26"/>
+                                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                                            <color key="textColor" name="label_color_main"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXw-9A-9Wg">
+                                                            <rect key="frame" x="30" y="52" width="364" height="50"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZVVV-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eU-LL-wkU">
+                                                                    <rect key="frame" x="10" y="15.5" width="57.5" height="19.5"/>
+                                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <textField opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oZI-1K-f4z">
+                                                                    <rect key="frame" x="72.5" y="0.0" width="291.5" height="50"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor ">
+                                                                            <color key="value" name="label_color_3"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="textChanged:" destination="WS4-8K-8bH" eventType="editingChanged" id="st3-Bz-YxJ"/>
+                                                                    </connections>
+                                                                </textField>
+                                                            </subviews>
+                                                            <color key="backgroundColor" name="text_field"/>
+                                                            <gestureRecognizers/>
+                                                            <constraints>
+                                                                <constraint firstItem="2eU-LL-wkU" firstAttribute="centerY" secondItem="oZI-1K-f4z" secondAttribute="centerY" id="AIl-5p-v8w"/>
+                                                                <constraint firstAttribute="bottom" secondItem="oZI-1K-f4z" secondAttribute="bottom" id="FQ0-bU-hxa"/>
+                                                                <constraint firstItem="2eU-LL-wkU" firstAttribute="leading" secondItem="XXw-9A-9Wg" secondAttribute="leading" constant="10" id="Y43-mi-5CO"/>
+                                                                <constraint firstItem="oZI-1K-f4z" firstAttribute="leading" secondItem="2eU-LL-wkU" secondAttribute="trailing" constant="5" id="ifi-Og-04w"/>
+                                                                <constraint firstAttribute="height" constant="50" id="wjb-Yc-bjp"/>
+                                                                <constraint firstAttribute="trailing" secondItem="oZI-1K-f4z" secondAttribute="trailing" id="z79-xq-mDs"/>
+                                                                <constraint firstItem="oZI-1K-f4z" firstAttribute="top" secondItem="XXw-9A-9Wg" secondAttribute="top" id="zAa-TS-3ej"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <gestureRecognizers/>
+                                                    <constraints>
+                                                        <constraint firstItem="m1x-tG-RXC" firstAttribute="top" secondItem="MFE-V1-pYJ" secondAttribute="topMargin" constant="5" id="SRF-rN-Mtf"/>
+                                                        <constraint firstItem="m1x-tG-RXC" firstAttribute="leading" secondItem="MFE-V1-pYJ" secondAttribute="leadingMargin" constant="10" id="W2w-6h-6YB"/>
+                                                        <constraint firstItem="XXw-9A-9Wg" firstAttribute="top" secondItem="m1x-tG-RXC" secondAttribute="bottom" constant="10" id="c99-JO-9Kt"/>
+                                                        <constraint firstAttribute="bottom" secondItem="XXw-9A-9Wg" secondAttribute="bottom" constant="10" id="e8y-Nw-cuz"/>
+                                                        <constraint firstItem="XXw-9A-9Wg" firstAttribute="leading" secondItem="m1x-tG-RXC" secondAttribute="leading" id="hbd-co-eIq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="XXw-9A-9Wg" secondAttribute="trailing" constant="20" id="yZl-H5-dqV"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="textContainerLabel" destination="2eU-LL-wkU" id="1oc-zT-TEG"/>
+                                                    <outlet property="textContainerView" destination="XXw-9A-9Wg" id="4O2-7E-nhP"/>
+                                                    <outlet property="topLabel" destination="m1x-tG-RXC" id="MVJ-9d-v0M"/>
+                                                    <outlet property="voucherTextField" destination="oZI-1K-f4z" id="3fr-qv-gMo"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="hhU-mN-KUr"/>
+                                <color key="backgroundColor" name="voucher_view"/>
+                                <constraints>
+                                    <constraint firstItem="avo-gH-QyN" firstAttribute="top" secondItem="ZRC-TB-3L4" secondAttribute="top" constant="20" id="BFg-vc-KEm"/>
+                                    <constraint firstAttribute="trailing" secondItem="avo-gH-QyN" secondAttribute="trailing" id="C0B-hn-WAz"/>
+                                    <constraint firstItem="avo-gH-QyN" firstAttribute="leading" secondItem="ZRC-TB-3L4" secondAttribute="leading" id="myo-2S-OVN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyJ-Zr-aJL">
+                                <rect key="frame" x="0.0" y="577.5" width="414" height="358.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xod-ZE-dOY">
+                                        <rect key="frame" x="15" y="15" width="107" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                        <color key="textColor" name="label_color_1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="350000 AMD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syl-uu-LlP">
+                                        <rect key="frame" x="147" y="14.5" width="110.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                        <color key="textColor" name="main"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount of be paid:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOY-vf-2dC">
+                                        <rect key="frame" x="10" y="59.5" width="144.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                        <color key="textColor" name="label_color_1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jaT-17-CdR">
+                                        <rect key="frame" x="0.0" y="223.5" width="414" height="5"/>
+                                        <color key="backgroundColor" name="voucher_view"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="60K-aG-hsD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0u-p9-plG">
+                                        <rect key="frame" x="62" y="243.5" width="290" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkd-F4-aV7">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="45"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="CONFIRM">
+                                                    <fontDescription key="titleFontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="18"/>
+                                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="confirmButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fki-jY-AMr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="main"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="wkd-F4-aV7" secondAttribute="bottom" id="9WS-cC-vNp"/>
+                                            <constraint firstItem="wkd-F4-aV7" firstAttribute="centerY" secondItem="g0u-p9-plG" secondAttribute="centerY" id="PBR-n7-Tcb"/>
+                                            <constraint firstItem="wkd-F4-aV7" firstAttribute="centerX" secondItem="g0u-p9-plG" secondAttribute="centerX" id="Rgm-aR-iYJ"/>
+                                            <constraint firstItem="wkd-F4-aV7" firstAttribute="leading" secondItem="g0u-p9-plG" secondAttribute="leading" id="izU-Je-CnP"/>
+                                            <constraint firstAttribute="height" constant="45" id="pea-Y3-Ju2"/>
+                                            <constraint firstAttribute="trailing" secondItem="wkd-F4-aV7" secondAttribute="trailing" id="r8c-vS-Drw"/>
+                                            <constraint firstItem="wkd-F4-aV7" firstAttribute="top" secondItem="g0u-p9-plG" secondAttribute="top" id="wGM-hB-iVL"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="350000 AMD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyI-bf-1do">
+                                        <rect key="frame" x="266" y="58" width="138" height="23"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                        <color key="textColor" name="label_color_2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="amount_view"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="g0u-p9-plG" secondAttribute="bottom" constant="70" id="01t-Pq-egv"/>
+                                    <constraint firstAttribute="trailing" secondItem="lyI-bf-1do" secondAttribute="trailing" constant="10" id="0j8-uC-oZA"/>
+                                    <constraint firstItem="hOY-vf-2dC" firstAttribute="top" secondItem="Xod-ZE-dOY" secondAttribute="bottom" constant="25" id="1hr-7J-uco"/>
+                                    <constraint firstItem="jaT-17-CdR" firstAttribute="top" secondItem="g0u-p9-plG" secondAttribute="top" constant="-20" id="3OT-mq-byj"/>
+                                    <constraint firstItem="g0u-p9-plG" firstAttribute="centerX" secondItem="vyJ-Zr-aJL" secondAttribute="centerX" id="Bmn-FS-s1I"/>
+                                    <constraint firstItem="Xod-ZE-dOY" firstAttribute="leading" secondItem="vyJ-Zr-aJL" secondAttribute="leading" constant="15" id="Uap-N6-WNj"/>
+                                    <constraint firstItem="lyI-bf-1do" firstAttribute="centerY" secondItem="hOY-vf-2dC" secondAttribute="centerY" id="X9B-22-nYd"/>
+                                    <constraint firstItem="g0u-p9-plG" firstAttribute="width" secondItem="vyJ-Zr-aJL" secondAttribute="width" multiplier="0.7" id="Yxk-h8-71u"/>
+                                    <constraint firstItem="Syl-uu-LlP" firstAttribute="centerY" secondItem="Xod-ZE-dOY" secondAttribute="centerY" id="cfi-i5-Ne9"/>
+                                    <constraint firstItem="Xod-ZE-dOY" firstAttribute="top" secondItem="vyJ-Zr-aJL" secondAttribute="top" constant="15" id="f1b-E7-2J7"/>
+                                    <constraint firstItem="hOY-vf-2dC" firstAttribute="leading" secondItem="vyJ-Zr-aJL" secondAttribute="leading" constant="10" id="u0o-fC-5d0"/>
+                                    <constraint firstItem="Syl-uu-LlP" firstAttribute="leading" secondItem="Xod-ZE-dOY" secondAttribute="trailing" constant="25" id="uMp-6A-8tN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="main"/>
+                        <constraints>
+                            <constraint firstItem="vyJ-Zr-aJL" firstAttribute="bottom" secondItem="ZRC-TB-3L4" secondAttribute="bottom" id="BBl-Zv-ftj"/>
+                            <constraint firstItem="vyJ-Zr-aJL" firstAttribute="leading" secondItem="ZRC-TB-3L4" secondAttribute="leading" id="Kcf-iC-njz"/>
+                            <constraint firstItem="ZRC-TB-3L4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LxF-ix-yBD"/>
+                            <constraint firstItem="avo-gH-QyN" firstAttribute="bottom" secondItem="vyJ-Zr-aJL" secondAttribute="top" constant="-10" id="S3R-QU-adS"/>
+                            <constraint firstAttribute="bottom" secondItem="ZRC-TB-3L4" secondAttribute="bottom" constant="-40" id="ZLa-Z5-Tv3"/>
+                            <constraint firstItem="ZRC-TB-3L4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="74" id="Zlw-MW-YDd"/>
+                            <constraint firstItem="vyJ-Zr-aJL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="gi8-H3-IMc"/>
+                            <constraint firstItem="ZRC-TB-3L4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qUT-Oj-whQ"/>
+                            <constraint firstItem="vyJ-Zr-aJL" firstAttribute="trailing" secondItem="ZRC-TB-3L4" secondAttribute="trailing" id="zct-Et-sEr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountToPaidLabel" destination="lyI-bf-1do" id="pDU-S6-U9v"/>
+                        <outlet property="amountView" destination="vyJ-Zr-aJL" id="ZpE-JK-Ci2"/>
+                        <outlet property="confirmButton" destination="wkd-F4-aV7" id="7rJ-IT-huJ"/>
+                        <outlet property="confirmButtonBackView" destination="g0u-p9-plG" id="urr-be-gEr"/>
+                        <outlet property="totalAmountLabel" destination="Syl-uu-LlP" id="3oq-Br-S1f"/>
+                        <outlet property="voucherTableView" destination="avo-gH-QyN" id="7Xh-nA-Z4h"/>
+                        <outlet property="voucherView" destination="ZRC-TB-3L4" id="Ibn-GD-alq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="amount_view">
+            <color red="0.11372549019607843" green="0.14901960784313725" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label_color_1">
+            <color red="0.75294117647058822" green="0.81176470588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label_color_2">
+            <color red="0.46274509803921571" green="0.59215686274509804" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label_color_3">
+            <color red="0.69411764705882351" green="0.71372549019607845" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label_color_main">
+            <color red="0.47450980392156861" green="0.55294117647058827" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main">
+            <color red="0.34509803921568627" green="0.49019607843137253" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text_field">
+            <color red="0.27058823529411763" green="0.30980392156862746" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="voucher_view">
+            <color red="0.090196078431372548" green="0.10980392156862745" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
